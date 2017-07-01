@@ -5,14 +5,14 @@
   </div>
 </template>
 
-<script>
+<script lang="js">
 import TodoList from 'src/components/todolist/TodoList.vue'
 
 export default {
-  name: 'app',
   components: {
     TodoList
-  }
+  },
+  name: 'App'
 }
 </script>
 
