@@ -13,6 +13,7 @@
 
 <script lang="js">
   import TodoListItem from './TodoListItem'
+  import Todo from 'src/models/todo'
 
   export default {
     components: {TodoListItem},
@@ -20,8 +21,8 @@
     data () {
       return {
         todos: [
-          {task: 'First task', done: false},
-          {task: 'Second task', done: true}
+          new Todo('First task', false),
+          new Todo('Second Task', true)
         ]
       }
     }
